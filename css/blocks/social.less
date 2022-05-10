@@ -1,0 +1,55 @@
+//main: ../style.less
+
+.social {
+	display: flex;
+	margin-bottom: 42px;
+}
+
+.social__link {
+	position: relative;
+	width: 40px;
+	height: 40px;
+	//	text-align: center; //выровнял по горизонтали
+	//	line-height: 52px; // криво выровнял по вертикали
+
+	margin-right: 10px;
+	text-decoration: none;
+	transition: transform .2s linear;
+
+	&:hover {
+		transform: translateY(-5px); //приподнимаются при наводе
+	}
+}
+
+.social__link--be {
+	background-color: #1869ff;
+}
+
+.social__link--dri {
+	background-color: #e51a68;
+}
+
+.social__link--in {
+	background-color: #007bb6;
+}
+
+.social__link--fb {
+	background-color: #3a5898;
+}
+
+.social__link--insta {
+	background-color: #13578a;
+}
+
+.social__link--tw {
+	background-color: #56acef;
+}
+
+.social__link img {
+	position: absolute;
+	right: 0;
+	left: 0;
+	margin: auto;
+	top: 50%;
+	transform: translateY(-50%); //выровнял картинки по центру
+}
