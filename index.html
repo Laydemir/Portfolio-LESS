@@ -10,7 +10,8 @@
 		rel="stylesheet">
 	<link rel="stylesheet" class="nav__link" href="css/style.css">
 	<title>Portfolio BrainsCould</title>
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	</script>
 </head>
 
 <body>
@@ -84,18 +85,18 @@
 		<div class="container">
 
 			<div class="works__nav">
-				<a class="works__nav-link" href="#">All</a>
-				<a class="works__nav-link" href="#">App</a>
-				<a class="works__nav-link" href="#">Websites</a>
-				<a class="works__nav-link" href="#">Interaction</a>
+				<a class="works__nav-link" href="#" data-filter="all">All</a>
+				<a class="works__nav-link" href="#" data-filter="app">App</a>
+				<a class="works__nav-link" href="#" data-filter="website">Websites</a>
+				<a class="works__nav-link" href="#" data-filter="interaction">Interaction</a>
 			</div>
 
-			<div class="portfolio">
-				<div class="portfolio__col">
+			<div class="portfolio" id="portfolio">
+				<div class="portfolio__col" data-cat="app">
 					<div class="work">
 						<img class="work__image" src="https://via.placeholder.com/370x300" alt="">
 						<div class="work__content">
-							<div class="work__cat">category</div>
+							<div class="work__cat">category: app</div>
 							<div class="work__title">
 								Project title
 								<time class="work__date" datetime="2018-11-01">2018</time>
@@ -104,11 +105,11 @@
 					</div>
 				</div><!-- ./portfolio__col 1-->
 
-				<div class="portfolio__col">
+				<div class="portfolio__col" data-cat="website">
 					<div class="work">
 						<img class="work__image" src="https://via.placeholder.com/370x300" alt="">
 						<div class="work__content">
-							<div class="work__cat">category</div>
+							<div class="work__cat">category: website</div>
 							<div class="work__title">
 								Project title
 								<time class="work__date" datetime="2018-11-01">2018</time>
@@ -117,11 +118,11 @@
 					</div>
 				</div><!-- ./portfolio__col 2-->
 
-				<div class="portfolio__col">
+				<div class="portfolio__col" data-cat="interaction">
 					<div class="work">
 						<img class="work__image" src="https://via.placeholder.com/370x300" alt="">
 						<div class="work__content">
-							<div class="work__cat">category</div>
+							<div class="work__cat">category: interaction</div>
 							<div class="work__title">
 								Project title
 								<time class="work__date" datetime="2018-11-01">2018</time>
@@ -130,11 +131,11 @@
 					</div>
 				</div><!-- ./portfolio__col 3-->
 
-				<div class="portfolio__col">
+				<div class="portfolio__col" data-cat="website">
 					<div class="work">
 						<img class="work__image" src="https://via.placeholder.com/370x300" alt="">
 						<div class="work__content">
-							<div class="work__cat">category</div>
+							<div class="work__cat">category: website</div>
 							<div class="work__title">
 								Project title
 								<time class="work__date" datetime="2018-11-01">2018</time>
@@ -143,11 +144,11 @@
 					</div>
 				</div><!-- ./portfolio__col 4-->
 
-				<div class="portfolio__col">
+				<div class="portfolio__col" data-cat="interaction">
 					<div class="work">
 						<img class="work__image" src="https://via.placeholder.com/370x300" alt="">
 						<div class="work__content">
-							<div class="work__cat">category</div>
+							<div class="work__cat">category: interaction</div>
 							<div class="work__title">
 								Project title
 								<time class="work__date" datetime="2018-11-01">2018</time>
@@ -156,11 +157,11 @@
 					</div>
 				</div><!-- ./portfolio__col 5-->
 
-				<div class="portfolio__col">
+				<div class="portfolio__col" data-cat="app">
 					<div class="work">
 						<img class="work__image" src="https://via.placeholder.com/370x300" alt="">
 						<div class="work__content">
-							<div class="work__cat">category</div>
+							<div class="work__cat">category: app</div>
 							<div class="work__title">
 								Project title
 								<time class="work__date" datetime="2018-11-01">2018</time>
@@ -660,6 +661,8 @@
 		</div><!-- ./modal__dialog-->
 	</div><!-- ./modal 3-->
 
+	<!-- JS -->
+	<script src="js/app.js"></script>
 </body>
 
 </html>
