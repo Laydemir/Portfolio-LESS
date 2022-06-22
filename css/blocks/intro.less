@@ -4,22 +4,45 @@
 
 .intro__inner {
 	display: flex;
-	padding-top: 100px;
-	padding-bottom: 120px;
+	padding-top: 6.6rem;
+	padding-bottom: 8rem;
 
 	background: url(../images/avatar.png) right bottom no-repeat;
 	border-bottom: 1px solid fade(@gray, 30%);
+
+	@media @tablet {
+		background-size: 330px auto;
+		background-position: 85% 0%;
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+	}
+
+	@media @mobile {
+		background-position: 100% 0%;
+	}
+
+	@media @mobile-sm {
+		background: #fff;
+	}
 
 }
 
 .intro__content {
 	width: 50%;
+
+	@media @mobile-sm {
+		width: 100%;
+	}
 }
 
 .intro__subtitle {
 	font-size: 2.2rem;
 	color: @black;
 	font-weight: 200;
+
+	@media @tablet {
+		font-size: 1.5rem;
+	}
 }
 
 .intro__title {
@@ -28,6 +51,10 @@
 	font-size: 3rem;
 	color: @black;
 	font-weight: 700;
+
+	@media @tablet {
+		font-size: 2rem;
+	}
 }
 
 .intro__text {
@@ -36,9 +63,6 @@
 	color: fade(@black, 70%); //добавили непрозрачность
 	font-weight: 400;
 }
-
-
-
 
 .intro__avatar {
 	width: 50%;

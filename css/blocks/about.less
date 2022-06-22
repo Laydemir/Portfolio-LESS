@@ -1,6 +1,10 @@
 // main: ../style.less
 .about {
 	margin: 8.5rem 0;
+
+	@media @tablet {
+		margin: 3.5rem 0;
+	}
 }
 
 .about__inner {
@@ -13,6 +17,25 @@
 	width: 50%;
 }
 
+.about__photo {
+	position: relative;
+
+	/*img {
+		position: absolute;
+		bottom: 0;
+		width: 50%;
+		height: auto;*/
+
+	@media @notebook {
+		width: 50%;
+		height: auto;
+	}
+
+	@media @tablet {
+		/*bottom: 30%;*/
+	}
+}
+
 .about__content {
 	margin-top: 2rem;
 	padding-left: 3.2rem;
@@ -23,6 +46,10 @@
 	color: @black;
 	font-weight: 700;
 	text-transform: uppercase;
+
+	@media @notebook {
+		font-size: 2.5rem;
+	}
 }
 
 .about__bigtitle {
@@ -34,6 +61,10 @@
 	color: fade(@black, 15%);
 	font-weight: 700;
 	text-transform: uppercase;
+
+	@media @notebook {
+		font-size: 4rem;
+	}
 }
 
 .about__text {
